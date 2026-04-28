@@ -1,0 +1,26 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="brand_bg_top">#FFF7ED</color>
+    <color name="brand_bg_bottom">#FFEBD7</color>
+    <color name="brand_surface">#FFF8F1</color>
+    <color name="brand_surface_stroke">#E7D4C2</color>
+    <color name="brand_panel_glass">#CCFFFFFF</color>
+    <color name="brand_panel_stroke">#EEFFFFFF</color>
+    <color name="brand_item_shadow">#5CA7957F</color>
+    <color name="brand_item_top">#FFFFFFFF</color>
+    <color name="brand_item_bottom">#FFF8EC</color>
+    <color name="brand_item_stroke">#F0E1D2</color>
+    <color name="brand_btn_normal">#FFFFFFFF</color>
+    <color name="brand_btn_pressed">#F6E9D8</color>
+    <color name="brand_btn_stroke">#E2D0BC</color>
+    <color name="brand_text_primary">#2B2119</color>
+    <color name="brand_text_secondary">#6D5644</color>
+    <color name="brand_text_hint">#A38267</color>
+</resources>

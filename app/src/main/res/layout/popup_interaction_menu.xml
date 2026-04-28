@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="146dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pet_menu_card"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <ScrollView
+        android:id="@+id/interactionActionsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:fadeScrollbars="false"
+        android:overScrollMode="never"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb_interaction"
+        android:scrollbarTrackVertical="@drawable/scrollbar_track_interaction"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/interactionActionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>

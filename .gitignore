@@ -1,0 +1,28 @@
+# Gradle / Android
+.gradle/
+**/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Cursor
+.cursor/
+
+# Temporary
+.tmp/
+tmp_thumbs/
+tmp/
+
+# Signing / secrets
+keystore/
+keystore.properties
+*.jks
+*.keystore
+*.cer
+

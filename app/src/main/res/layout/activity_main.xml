@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_soft">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/home_title"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/petContainer"
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_pet_preview_sakura"
+        android:elevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <FrameLayout
+            android:id="@+id/scenePreviewHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/pet_content_desc" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/rowDesktopVisible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/petContainer">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_desktop_visible_label"
+            android:textColor="@color/brand_text_secondary"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchDesktopVisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnInteract"
+            android:layout_width="84dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/bg_action_button"
+            android:text="@string/menu_interact"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNurture"
+            android:layout_width="72dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/bg_action_button"
+            android:text="@string/menu_nurture"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnShop"
+            android:layout_width="72dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/bg_action_button"
+            android:text="@string/menu_shop"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="72dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_action_button"
+            android:text="@string/menu_settings"
+            android:textAllCaps="false"
+            android:textColor="@color/brand_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
